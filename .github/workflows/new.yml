@@ -1,0 +1,15 @@
+name: test
+
+on: push 
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: list code
+        run: |
+          git clone https://github.com/ExlearnTechnology/myntra-github-actions.git
+          cd myntra-github-actions
+          ls -la
+          
