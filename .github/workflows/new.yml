@@ -18,6 +18,6 @@ jobs:
 
         - name: check code
           run: |
-            cd myntra-github-actions
+            pwd
             ls -la
        
