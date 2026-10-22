@@ -7,9 +7,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: list code
-        run: |
-          git clone https://github.com/ExlearnTechnology/myntra-github-actions.git
-          cd myntra-github-actions
-          ls -la
-          
+    #   - name: list code
+    #     run: |
+    #       git clone https://github.com/ExlearnTechnology/myntra-github-actions.git
+    #       cd myntra-github-actions
+    #       ls -la
+
+        - name: Checkout source code
+          uses: actions/checkout@v3
+
+        - name: check code
+          run: |
+            cd myntra-github-actions
+            ls -la
+       
