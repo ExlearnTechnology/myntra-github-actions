@@ -1,0 +1,25 @@
+name: myntra-prod-b21
+
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: clone the code on runner
+        run: git clone https://github.com/ExlearnTechnology/myntra-github-actions.git
+
+      - name: verify the code
+        run: |
+          cd myntra-github-actions
+          ls -l
+
+
+
+    
+
+    
+
+
+
